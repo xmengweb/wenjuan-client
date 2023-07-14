@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    // 模块化规范
+    "module": "ESNext",
+    // 是否允许js
+    "allowJs": true,
+    // 编译时是否为文件生成.d.ts类型声明文件
+    "declaration": true,
+    // 编译时删除所有注释
+    "removeComments": true,
+    // 使用reflect-metadata库编译时为元数据提供类型
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    // 允许合成默认导入
+    "allowSyntheticDefaultImports": true,
+    // 编译后的js版本 es5,es6,esnext等等
+    "target": "es2017",
+    // 解决默认导入时编译成导入一个函数require() 不符合规范,抹平其它规范没有严格遵守esmodule规范造成的差异
+    "esModuleInterop": true,
+    // 源码地图
+    "sourceMap": true,
+    // 编译后输出到的目录
+    "outDir": "dist",
+    // 设置ts需要编译的文件基准目录,它会相对tsconfig.json文件进行匹配,这里./就是所有和tsconfig.json同级的目录下的文件
+    "baseUrl": "./",
+    // 使 TypeScript 将上次编译的工程图信息保存到磁盘上的文件中,在编译目录中生成.tsbuildinfo文件
+    "incremental": true,
+    // 模块解析策略 node(nodejs)/classic（在 TypeScript 1.6 版本之前使用）
+    "moduleResolution": "node",
+    // 跳过默认库类型声明文件检查
+    "skipLibCheck": true,
+    // 是否打印ts解析文件的日志
+    "explainFiles": false
+  },
+  "extends": "@tsconfig/node18/tsconfig.json",
+  // ts管辖的目录
+  "include": ["src", "src/index.ts"]
+}
