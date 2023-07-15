@@ -6,6 +6,7 @@ const app = new Koa();
 const router = new Router();
 
 router.use("/api", questionRoute.routes());
+
 app.use(router.routes()).use(router.allowedMethods());
 
 app.listen(3000, () => {
