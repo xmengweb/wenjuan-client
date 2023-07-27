@@ -34,13 +34,13 @@ export const routes = createHashRouter([
     ],
   },
   {
+    path: "login",
+    element: <Login />,
+  },
+  {
     path: "/",
     element: <MainLayout />,
     children: [
-      {
-        path: "login",
-        element: <Login />,
-      },
       {
         path: "registry",
         element: <Registry />,

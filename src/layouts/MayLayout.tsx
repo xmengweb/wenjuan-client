@@ -5,9 +5,9 @@ import { Outlet } from "react-router-dom";
 
 const MayLayout = memo(() => {
   return (
-    <Layout>
+    <Layout className="w-full h-full">
       <Header className="h-16 bg-white">Header</Header>
-      <Content>
+      <Content className="w-full h-full">
         <Suspense fallback="loading...">
           <Outlet />
         </Suspense>
