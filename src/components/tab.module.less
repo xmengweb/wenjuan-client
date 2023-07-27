@@ -1,9 +1,24 @@
 .tabs {
   .tabs-nav-list {
     display: flex;
+    font-size: 20px;
+    font-weight: 600;
+
     .tabs-nav-list-tab {
+      padding: 12px 0;
+      cursor: pointer;
+      color: #8c8c8c;
+
+      &:not(:first-child) {
+        margin-left: 40px;
+      }
+    }
+    .tabs-nav-list-tab-active {
+      color: #262626;
+      border-bottom: 3px solid #f79000;
     }
   }
   .tabs-content {
+    margin-top: 20px;
   }
 }

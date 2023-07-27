@@ -25,7 +25,8 @@ const Tab: React.FC<ITabProps> = memo(({ items }) => {
         {items.map((item, index) => {
           return (
             <div
-              className={classnames(styles["tabs-nav-list-tab"], {
+              className={classnames({
+                [styles["tabs-nav-list-tab"]]: true,
                 [styles["tabs-nav-list-tab-active"]]: index === active,
               })}
               key={item.key}

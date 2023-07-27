@@ -1,0 +1,20 @@
+.tabs .tabs-nav-list {
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+}
+.tabs .tabs-nav-list .tabs-nav-list-tab {
+  padding: 12px 0;
+  cursor: pointer;
+  color: #8c8c8c;
+}
+.tabs .tabs-nav-list .tabs-nav-list-tab:not(:first-child) {
+  margin-left: 40px;
+}
+.tabs .tabs-nav-list .tabs-nav-list-tab-active {
+  color: #262626;
+  border-bottom: 3px solid #f79000;
+}
+.tabs .tabs-content {
+  margin-top: 20px;
+}
