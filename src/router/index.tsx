@@ -2,7 +2,7 @@ import React from "react";
 import { Navigate, createHashRouter } from "react-router-dom";
 import MainLayout from "@/layouts/MayLayout";
 // const App = React.lazy(() => import('@/App'))
-const Login = React.lazy(() => import("@/views/Login"));
+import Login from '@/views/Login'
 const Registry = React.lazy(() => import("@/views/Registry"));
 const NotFound = React.lazy(() => import("@/views/NotFound"));
 const Home = React.lazy(() => import("@/views/Home"));
