@@ -5,7 +5,9 @@ import { useNavigate } from "react-router-dom";
 const Home = memo(() => {
   const navigate = useNavigate();
   function handleToUse() {
-    navigate("/manage/list");
+    if (localStorage.getItem("token")) {
+      navigate("/manage/list");
+    } else navigate("/login");
   }
   return (
     <div className="bg-[url('/wjx-banner-pc.jpg')] bg-cover bg-center w-full h-[929px] text-center">
