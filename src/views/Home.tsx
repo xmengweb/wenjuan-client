@@ -10,8 +10,8 @@ const Home = memo(() => {
     } else navigate("/login");
   }
   return (
-    <div className="bg-[url('/wjx-banner-pc.jpg')] bg-cover bg-center w-full h-[929px] text-center">
-      <Button type="primary" onClick={handleToUse}>
+    <div className="bg-[url('/wjx-banner-pc.jpg')] bg-cover bg-center w-full h-full flex justify-center items-center">
+      <Button className="w-[160px] h-[62px] text-xl" type="primary" onClick={handleToUse}>
         开始使用
       </Button>
     </div>
